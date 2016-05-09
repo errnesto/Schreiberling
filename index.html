@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Alster Lasik Briefpapier</title>
+    <style>
+
+      @font-face {
+        font-family: 'MyriadPro';
+        src: url('fonts/MyriadPro-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'MyriadPro';
+        src: url('fonts/MyriadPro-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      body {
+        font-family: 'MyriadPro';
+        position: relative;
+        padding: 0;
+        margin: 0;
+        font-size: 0;
+        min-width: 620px;
+        background-color: #ccc;
+      }
+      .letter {
+        width: 100%;
+        height: auto;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      textarea,
+      input {
+        padding: 1%;
+        font-family: 'MyriadPro';
+        position: absolute;
+        resize: none;
+        border: 0;
+      }
+      input:focus,
+      textarea:focus {
+        outline: none;
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+      .address {
+        top: 18%;
+        left: 9.5%;
+        width: 39.5%;
+        height: 11%;
+        font-size: 1.4vw;
+      }
+      .subject {
+        top: 37%;
+        left: 9.5%;
+        width: 62%;
+        height: 2%;
+        font-weight: bold;
+        font-size: 1.9vw;
+      }
+      .text {
+        top: 41%;
+        left: 9.5%;
+        width: 62%;
+        height: 53%;
+        font-weight: normal;;
+        font-size: 1.9vw;
+      }
+    </style>
+  </head>
+  <body>
+      <img class="letter" src="img/AlsterLasik_Briefpapier.png" />
+
+      <textarea class="address">Anschrift</textarea>
+      <input type="text" class="subject" value="Betreff" />
+      <textarea class="text">Sehr geehrte Damen und Herren,</textarea>
+  </body>
+
+  <script>
+    require('./menu.js')
+  </script>
+</html>
