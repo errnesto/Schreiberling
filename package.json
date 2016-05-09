@@ -4,7 +4,9 @@
   "description": "create pre styled PDF's for company letters",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "buildOSX": "electron-packager . --platform=darwin --arch=x64 --icon=img/schreiberlingLogo.icns --out=/Users/manuelreich/Desktop --overwrite",
+    "buildWIN": "electron-packager . --platform=darwin --arch=x64 --icon=img/schreiberlingLogo.ico --out=/Users/manuelreich/Desktop --overwrite"
   },
   "repository": {
     "type": "git",

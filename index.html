@@ -44,11 +44,18 @@
         resize: none;
         border: 0;
       }
-      input:focus,
-      textarea:focus {
-        outline: none;
-        background-color: rgba(0, 0, 0, 0.05);
-      }
+        input:focus,
+        textarea:focus {
+          outline: none;
+          background-color: rgba(0, 0, 0, 0.05);
+        }
+        @media print {
+          input:focus,
+          textarea:focus {
+            background-color: transparent;
+            cursor: none;
+          }
+        }
       .address {
         top: 18%;
         left: 9.5%;

@@ -135,22 +135,22 @@ var template = [
         selector: 'arrangeInFront:'
       }
     ]
-  },
-  {
-    label: 'View',
-    submenu: [
-      {
-        label: 'Reload',
-        accelerator: 'Command+R',
-        click: function () { remote.getCurrentWindow().reload() }
-      },
-      {
-        label: 'Toggle DevTools',
-        accelerator: 'Alt+Command+I',
-        click: function () { remote.getCurrentWindow().toggleDevTools() }
-      }
-    ]
   }
+  // {
+  //   label: 'View',
+  //   submenu: [
+  //     {
+  //       label: 'Reload',
+  //       accelerator: 'Command+R',
+  //       click: function () { remote.getCurrentWindow().reload() }
+  //     },
+  //     {
+  //       label: 'Toggle DevTools',
+  //       accelerator: 'Alt+Command+I',
+  //       click: function () { remote.getCurrentWindow().toggleDevTools() }
+  //     }
+  //   ]
+  // }
 ]
 
 let menu = Menu.buildFromTemplate(template)
