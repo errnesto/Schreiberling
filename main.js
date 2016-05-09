@@ -9,7 +9,6 @@ let mainWindow
 function createWindow () {
   mainWindow = new BrowserWindow({width: 620, height: 877})
   mainWindow.loadURL('file://' + __dirname + '/index.html')
-
   mainWindow.on('closed', function () {
     mainWindow = null
   })
